@@ -1,1 +1,430 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/* Main styling*/
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.7em;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    padding-bottom: 20px;   
+}
+p {
+    margin: 10px 0;
+}
+/* Utility classes*/
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.text-primary {
+    color: #f7c08a;
+}
+.lead {
+    font-size: 20px;
+}
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary {
+    background: #333;
+    color: #f7c08a;
+}
+/* Navbar */
+#navbar {
+    background: #333;
+    color: white;
+    overflow: auto;
+}
+#navbar a {
+    color: white;
+}
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+#navbar ul {
+    list-style: none;
+    float: right;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#navbar ul li a:hover {
+    background: #444;
+    color: #f7c08a;
+}
+/* Showcase*/
+#showcase {
+    background: url('../img/pexels-pixabay-258154.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+#showcase .showcase content p {
+    padding: 20px;
+    line-height: 1.7em;
+}
+/* Home Info*/
+#home-info {
+    height: 400px;
+}
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('../img/pexels-ian-panelo.jpg')no-repeat center/cover; 
+    min-height: 100%;
+}
+#home-ifo .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+/* About info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
 
+/* Container for images*/
+.amenities-container{
+    background: #333;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+/*image styling*/
+.amenity-img {
+    display: block;
+    min-height: 100%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Room image*/
+.room img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+}
+.room-container{
+    justify-content: center;
+    background-color: #444;
+
+}
+
+/* Book now page*/
+ header {
+    background-color: #333;
+    color: #f7c08a;
+    justify-content: center;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+/*Booking form container*/
+#booking-form {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+#booking-form .form {
+    display: flex;
+    flex-direction: column;
+}
+/* styling for form labels*/
+#booking-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* styling for form inputs*/
+#booking-form input,
+#booking-form select,
+#booking-form button {
+    padding: 10px;
+    width: 50%;
+    border: 1px #ddd solid;
+}
+/* Button styling*/
+#booking-form button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+#booking-form button:hover {
+    background-color: #f7c08a;
+}
+
+#booking-form {
+    padding: 15px;
+    
+}
+
+/* Contact Form*/
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+#contact-form textarea {
+    height: 200px;
+}
+
+/* Footer*/
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: white;
+    padding: 20px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    #menu-toggle {
+      display: block;
+    }
+  
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    #nav-links.active {
+      display: flex;
+    }
+  
+    #nav-links li {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    #nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .mySlide {
+    display: none;
+    text-align: center;
+  }
+  
+  .mySlide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .mySlide h3 {
+    position: relative;
+    margin-top: -60px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+  }
+/* Slide buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Dots */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .slideshow-container {
+    margin-top: 80px; /* adjust depending on navbar height */
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  .roomSlide {
+    display: none;
+    text-align: center;
+  }
+/* Set a clear section for the "About" content */
+#about-info {
+    margin-top: 80px; /* Add some margin to prevent overlap with navbar */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for about section */
+  }
+  
+  /* Container for About section */
+  #about-info .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Left side (text content) */
+  #about-info .info-left {
+    flex: 1;
+  }
+  
+  /* Right side (image content) */
+  #about-info .info-right {
+    flex: 1;
+  }
+  
+  #hotelImage {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto;
+    max-height: 500px; /* Optional: limit image height to keep layout clean */
+    object-fit: cover;
+    transition: opacity 2s ease-in;
+  }
+  /* Ensure the footer is properly spaced from content */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
