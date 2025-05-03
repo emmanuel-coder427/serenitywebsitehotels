@@ -491,3 +491,10 @@ footer {
   padding: 10px;
   position: relative;
 }
+.info-img {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 100%;
+}
+
