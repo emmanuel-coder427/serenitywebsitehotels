@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+// Mobile Menu Toggle
+document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.querySelector("nav ul");
+  const navLinks = document.getElementById("nav-links");
 
-  menuToggle.addEventListener("click", function () {
-    navLinks.classList.toggle("showing");
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
   });
 });
 
@@ -134,3 +135,54 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+ document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("bookingForm");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent blank page
+
+      const name = document.getElementById("name").value;
+      alert("Thank you for booking with us, " + name + "! We look forward to hosting you.");
+
+      form.reset(); // Optional: Reset the form
+    });
+  });
+
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const fadeEls = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.3
+    });
+
+    fadeEls.forEach((el) => observer.observe(el));
+  });
+
+// Dark/Light Mode Toggle
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("theme-toggle");
+  const body = document.body;
+
+  // Check localStorage for saved theme
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark-mode");
+    toggle.textContent = "☀️";
+  }
+
+  toggle.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    const isDark = body.classList.contains("dark-mode");
+    toggle.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+});
+
+
