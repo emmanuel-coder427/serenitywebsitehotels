@@ -473,12 +473,6 @@ footer {
   align-items: center;
 }
 
-/* Image Side */
-.info-img {
-  flex: 1;
-  background: url('../img/hotel.jpg') no-repeat center center/cover;
-  min-height: 300px;
-}
 
 /* Text Content Side */
 .info-content {
