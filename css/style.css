@@ -555,6 +555,119 @@ footer {
     position: relative;
   }
 }
+.amenity-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.amenity-list li {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.amenity-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.amenity-gallery img {
+  width: 30%;
+  min-width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .btn,
+.dark-mode .btn-light {
+  background-color: #333;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+
+/* Toggle Button Style */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+/* Default nav styles */
+#nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* Hide menu links by default on small screens */
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+/* Show nav by default on larger screens */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  #nav-links {
+    display: flex !important;
+  }
+}
+
+
+
+
 
 
 
