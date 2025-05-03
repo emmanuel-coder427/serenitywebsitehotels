@@ -1,9 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+// Toggle menu on mobile
+document.addEventListener('DOMContentLoaded', function () {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.querySelector('#navbar ul');
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
   });
 });
 
