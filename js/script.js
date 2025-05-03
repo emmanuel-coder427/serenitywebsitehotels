@@ -1,12 +1,13 @@
-// Toggle menu on mobile
-document.addEventListener('DOMContentLoaded', function () {
-  const menuToggle = document.getElementById('menu-toggle');
-  const navLinks = document.querySelector('#navbar ul');
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.getElementById("menu-toggle");
+  const navLinks = document.querySelector("nav ul");
 
-  menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+  menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("showing");
   });
 });
+
+
 
 
 
